@@ -1,4 +1,4 @@
-IMAGE?=ghcr.io/fabioassuncao/php
+IMAGE?=ghcr.io/sudofabio/php
 VERSION?=8.4
 VERSIONS?=8.2 8.3 8.4 8.2-nginx
 DOCKER_RUN:=docker run --rm --entrypoint "" ${IMAGE}:${VERSION}

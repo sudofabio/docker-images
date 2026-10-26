@@ -1,6 +1,6 @@
 # Docker PHP-FPM base on Alpine Linux
 
-![Build/Publish CI](https://github.com/fabioassuncao/docker-images/workflows/Docker%20Build/Publish%20CI/badge.svg)
+![Build/Publish CI](https://github.com/sudofabio/docker-images/workflows/Docker%20Build/Publish%20CI/badge.svg)
 
 Simple docker image for PHP/Laravel development.
 
@@ -28,7 +28,7 @@ VERSION=8.4 make release
 How to customize image name
 
 ```shell
-VERSION=8.4 IMAGE=ghcr.io/fabioassuncao/php make build
+VERSION=8.4 IMAGE=ghcr.io/sudofabio/php make build
 ```
 
 Check image by PHP version
@@ -46,14 +46,14 @@ make check-all
 Mount your code to be served with container
 
 ```shell
-docker run --name=app -v /path/to/project:/var/www/html -p 8000:8000 ghcr.io/fabioassuncao/php:8.4
+docker run --name=app -v /path/to/project:/var/www/html -p 8000:8000 ghcr.io/sudofabio/php:8.4
 ```
 
 Using docker-compose
 
 ```
 x-function: &common_setup
-    image: ghcr.io/fabioassuncao/php:8.4
+    image: ghcr.io/sudofabio/php:8.4
     restart: always
     environment:
         CONTAINER_ROLE: app
